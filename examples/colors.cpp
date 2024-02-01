@@ -16,7 +16,7 @@ void print_colors() {
       for (int j = 0; j < sizej; j++) {
         const int x = i - (sizei / 2), y = j - (sizej / 2);
         const float pi = 3.141593;
-        const float h = (pi + atan2((float)x, float(y))) / (2 * pi);
+        const float h = (pi + atan2((float)x, (float)y)) / (2 * pi);
         cout << stc::hsl_bg(h, 1, 0.5F) << " ";
       }
       cout << stc::reset << "   ";
