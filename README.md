@@ -7,6 +7,7 @@
 - MIT license.
 
 # Examples
+## Basic usage
 ```cpp
 #include "stc.hpp"
 #include <iostream>
@@ -19,6 +20,7 @@ int main() {
 ```
 ![Example 1](images/basic.png)
 
+## Color modes
 ```cpp
 #include "stc.hpp"
 #include <iostream>
@@ -43,6 +45,7 @@ int main(int argc, char **argv) {
 ```
 ![Example 2](images/modes.png)
 
+## Advanced usage
 ```cpp
 #include <iostream>
 #include "stc.hpp"
@@ -64,6 +67,7 @@ int main() {
 ```
 ![Example 3](images/advanced.png)
 
+## Color wheels
 ```cpp
 #include <iomanip>
 #include <iostream>
