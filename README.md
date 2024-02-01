@@ -7,7 +7,7 @@
 - MIT license.
 
 # Usage
-## Colors
+### Colors
 - `stc::rgb_fg(r, g, b)` sets the foreground color using RGB color model.
 - `stc::rgb_bg(r, g, b)` sets the background color using RGB color model.
 > r, g, b are integer values and should be in range 0-255
@@ -15,7 +15,7 @@
 - `stc::hsl_bg(h, s, l)` sets the background color using HSL color model.
 > h, s, l are float values and should be in range 0-1
 
-## Extras
+### Extras
 - `stc::reset` resets the output style.
 - `stc::bold` makes the text bold.
 - `stc::underline` makes the text underlined.
@@ -23,10 +23,15 @@
 - `stc::crossed_out` makes the text crossed out. (~~example~~)
 > terminal support may vary for underline and crossed out.
 
-## Color modes
+### Color modes
 - `src::color_256` sets the color mode to 256 color. (default)
 - `stc::true_color` sets the color mode to true color.
 - `stc::no_color` disables all color codes from being emitted to the stream. Note: if you set a style before dont forget to use `stc::reset`, as it will still be visible even after you change the color mode. This mode simply guarantees no color codes will be printed, but it does not erase already existing ones.
+
+```cpp
+cout << stc::true_color;
+cout << stc::rgb_fg(255, 0, 255) << "See below for " << stc::bold << "more examples.";
+```
 
 # Examples
 ## Basic usage
