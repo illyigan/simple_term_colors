@@ -138,3 +138,7 @@ int main() {
 > code: examples/colors.cpp
 
 ![Example 4](images/colors.png)
+
+# TODO
+- Hex RGB support
+- 16 color support
