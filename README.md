@@ -46,6 +46,7 @@ int main() {
 }
 ```
 > code: examples/basic.cpp
+
 ![Example 1](images/basic.png)
 
 ## Color modes
@@ -72,6 +73,7 @@ int main(int argc, char **argv) {
 }
 ```
 > code: examples/modes.cpp
+
 ![Example 2](images/modes.png)
 
 ## Advanced usage
@@ -95,6 +97,7 @@ int main() {
 }
 ```
 > code: examples/advanced.cpp
+
 ![Example 3](images/advanced.png)
 
 ## Color wheels
@@ -133,4 +136,5 @@ int main() {
 }
 ```
 > code: examples/colors.cpp
+
 ![Example 4](images/colors.png)
