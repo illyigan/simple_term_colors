@@ -10,8 +10,8 @@
 ## Colors
 - `stc::rgb_fg(r, g, b)` sets the foreground color using RGB color model.
 - `stc::rgb_bg(r, g, b)` sets the background color using RGB color model.
-- `stc::hsl_fg(r, g, b)` sets the foreground color using HSL color model.
-- `stc::hsl_bg(r, g, b)` sets the background color using HSL color model.
+- `stc::hsl_fg(h, s, l)` sets the foreground color using HSL color model.
+- `stc::hsl_bg(h, s, l)` sets the background color using HSL color model.
 
 ## Extras
 - `stc::reset` resets the output style.
