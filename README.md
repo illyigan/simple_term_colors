@@ -7,7 +7,7 @@
 - MIT license.
 
 # Examples
-'''cpp
+```cpp
 #include "stc.hpp"
 #include <iostream>
 
@@ -16,10 +16,10 @@ int main() {
             << stc::reset << "And this text is back to normal.\n";
   return 0;
 }
-'''
+```
 ![Example 1](images/basic.png)
 
-'''cpp
+```cpp
 #include "stc.hpp"
 #include <iostream>
 
@@ -40,10 +40,10 @@ int main(int argc, char **argv) {
   cout << stc::rgb_fg(0, 0, 0) << stc::hsl_bg(0.8, 0.3, 0.6) << "Hello!" << stc::reset << '\n';
   return 0;
 }
-'''
+```
 ![Example 2](images/modes.png)
 
-'''cpp
+```cpp
 #include <iostream>
 #include "stc.hpp"
 
@@ -61,10 +61,10 @@ int main() {
   cout << stc::true_color << stc::hsl_fg(0.55, 0.9, 0.8) << "True color support enabled. See colors.cpp example for better visualisation.\n";
   return 0;
 }
-'''
+```
 ![Example 3](images/advanced.png)
 
-'''cpp
+```cpp
 #include <iomanip>
 #include <iostream>
 
@@ -97,5 +97,5 @@ int main() {
   std::cout << "truecolor" << std::setw(33) << "256 color" << '\n';
   return 0;
 }
-'''
+```
 ![Example 4](images/colors.png)
