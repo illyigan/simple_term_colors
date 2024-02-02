@@ -168,4 +168,5 @@ int main() {
 
 # TODO
 - Hex RGB support
-- 16 color support
+- *Maybe* 16 color support (a lot of background and foreground combinations would become unreadable when truncated to 16 colors, this issue is especially frustrating because terminals often define custom system colors, which rgb values we cannot retrieve)
+- *Maybe* the color code and rgb values could be packed into 32 bits using bitfields, but bounds checking would have to be implemented as well (right now the 255 cap is pretty much only a suggestion, the value is sometimes higher during internal calculations, which would cause overflows)
