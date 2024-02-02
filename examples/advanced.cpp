@@ -10,7 +10,7 @@ int main() {
   static_assert(my_fav_color.code == 55); // passes
 
   cout << stc::rgb_fg(255, 0, 0) << "This text is red,\n" << stc::reset;
-  cout << stc::no_color << stc::rgb_fg(255, 0, 0) << "But this isn't because we set the color mode to no-color\n" << stc::reset;
+  cout << stc::no_color << stc::rgb_fg(255, 0, 0) << "But this isn't because we set the color mode to no-color\n";
 
   cout << stc::true_color << stc::hsl_fg(0.55, 0.9, 0.8) << "True color support enabled. See colors.cpp example for better visualisation.\n";
   return 0;
