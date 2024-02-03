@@ -24,7 +24,7 @@
 > terminal support may vary for underline and crossed out.
 
 ### Color modes
-- `src::color_256` sets the color mode to 256 color. (default)
+- `stc::color_256` sets the color mode to 256 color. (default)
 - `stc::true_color` sets the color mode to true color.
 - `stc::no_color` disables all color codes from being emitted to the stream. Note: if you set a style before dont forget to use `stc::reset` BEFORE `stc::no_color`, as it will still be visible even after you change the color mode. This mode simply guarantees no color codes will be printed, but it does not erase already existing ones.
 
