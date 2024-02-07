@@ -7,6 +7,7 @@
 - MIT license.
 
 # Usage
+## The library provides the following manipulators:
 ### Colors
 - `stc::rgb_fg(r, g, b)` sets the foreground color using RGB color model.
 - `stc::rgb_bg(r, g, b)` sets the background color using RGB color model.
@@ -14,19 +15,27 @@
 - `stc::hsl_fg(h, s, l)` sets the foreground color using HSL color model.
 - `stc::hsl_bg(h, s, l)` sets the background color using HSL color model.
 > h, s, l are float values and should be in range 0-1
+- `stc::code_fg(code)` sets the foreground color using a code.
+- `stc::code_bg(code)` sets the background color using a code.
+> code is an integer and should be in range 0-255
 
 ### Extras
 - `stc::reset` resets the output style.
+- `stc::reset_fg` resets the output foreground color.
+- `stc::reset_bg` resets the output background color.
 - `stc::bold` makes the text bold.
+- `stc::faint` makes the text faint.
+- `stc::italic` makes the text italic.
 - `stc::underline` makes the text underlined.
 - `stc::inverse` swaps the background and foreground colors.
 - `stc::crossed_out` makes the text crossed out. (~~example~~)
-> terminal support may vary for underline and crossed out.
+> terminal support may vary for some options.
 
 ### Color modes
 - `stc::color_256` sets the color mode to 256 color. (default)
 - `stc::true_color` sets the color mode to true color.
 - `stc::no_color` disables all color codes from being emitted to the stream. Note: if you set a style before dont forget to use `stc::reset` BEFORE `stc::no_color`, as it will still be visible even after you change the color mode. This mode simply guarantees no color codes will be printed, but it does not erase already existing ones.
+> the color mode is set per output stream.
 
 ```cpp
 cout << stc::true_color;
