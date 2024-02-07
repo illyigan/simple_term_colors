@@ -8,18 +8,18 @@
 
 # Usage
 ## The library provides the following manipulators:
-### Colors
+#### Colors
 - `stc::rgb_fg(r, g, b)` sets the foreground color using RGB color model.
 - `stc::rgb_bg(r, g, b)` sets the background color using RGB color model.
-> r, g, b are integer values and should be in range 0-255
+> r, g, b are integer values and should be in range 0-255.
 - `stc::hsl_fg(h, s, l)` sets the foreground color using HSL color model.
 - `stc::hsl_bg(h, s, l)` sets the background color using HSL color model.
-> h, s, l are float values and should be in range 0-1
+> h, s, l are float values and should be in range 0-1.
 - `stc::code_fg(code)` sets the foreground color using a code.
 - `stc::code_bg(code)` sets the background color using a code.
-> code is an integer and should be in range 0-255
+> code is an integer and should be in range 0-255.
 
-### Extras
+#### Extras
 - `stc::reset` resets the output style.
 - `stc::reset_fg` resets the output foreground color.
 - `stc::reset_bg` resets the output background color.
@@ -31,7 +31,7 @@
 - `stc::crossed_out` makes the text crossed out. (~~example~~)
 > terminal support may vary for some options.
 
-### Color modes
+#### Color modes
 - `stc::color_256` sets the color mode to 256 color. (default)
 - `stc::true_color` sets the color mode to true color.
 - `stc::no_color` disables all color codes from being emitted to the stream. Note: if you set a style before dont forget to use `stc::reset` BEFORE `stc::no_color`, as it will still be visible even after you change the color mode. This mode simply guarantees no color codes will be printed, but it does not erase already existing ones.
