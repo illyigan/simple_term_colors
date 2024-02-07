@@ -7,7 +7,7 @@
 - MIT license.
 
 # Usage
-## The library provides the following manipulators:
+### The library provides the following manipulators:
 #### Colors
 - `stc::rgb_fg(r, g, b)` sets the foreground color using RGB color model.
 - `stc::rgb_bg(r, g, b)` sets the background color using RGB color model.
@@ -36,6 +36,8 @@
 - `stc::true_color` sets the color mode to true color.
 - `stc::no_color` disables all color codes from being emitted to the stream. Note: if you set a style before dont forget to use `stc::reset` BEFORE `stc::no_color`, as it will still be visible even after you change the color mode. This mode simply guarantees no color codes will be printed, but it does not erase already existing ones.
 > the color mode is set per output stream.
+
+### They can be used in the following way:
 
 ```cpp
 cout << stc::true_color;
