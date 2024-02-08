@@ -11,7 +11,7 @@ void print_rainbow(std::string_view text) {
 }
 
 int main() {
-  std::cout << "is a " << stc::bold << "C++20 header-only library "
+  std::cout << "is a " << stc::bold << "C++17 header-only library "
             << stc::reset << "for manipulating ";
   print_rainbow("terminal output colors");
   std::cout << " using " << stc::underline << "ANSI escape sequences"
