@@ -1,4 +1,4 @@
-![C++17 header-only library for manipulating terminal output colors using ANSI escape sequences.](images/logo.png)
+![C++17 header-only library for manipulating terminal output colors using ANSI escape sequences.](images/banner.png)
 
 # Features
 - Support for true color, 256 color and black and white terminals. The type of color escape sequences emitted can be changed at runtime.
@@ -176,4 +176,4 @@ int main() {
 ```
 > code: examples/simple_term_colors.cpp
 
-![Example 5](images/logo.png)
+![Example 5](images/banner.png)
