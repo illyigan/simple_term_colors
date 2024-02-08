@@ -23,7 +23,6 @@ SOFTWARE.
 */
 
 #pragma once
-#include <array>
 #include <ostream>
 
 namespace stc {
@@ -70,7 +69,7 @@ inline std::ostream &operator<<(std::ostream &os,
   return os;
 }
 
-constexpr const std::array<_color_data, 256> _256colors = {
+constexpr const _color_data _256colors[256] = {
     _color_data{0, 0, 0, 0 /*Black(SYSTEM)*/},
     _color_data{128, 0, 0, 1 /*Maroon(SYSTEM)*/},
     _color_data{0, 128, 0, 2 /*Green(SYSTEM)*/},
@@ -349,7 +348,7 @@ constexpr int _find_closest_color_code(int r, int g, int b) {
   // we start at index 16, because colors 0 - 16 are system colors (terminal
   // emulators often define custom values for these)
   size_t best_index = 16;
-  for (size_t i = best_index; i < _256colors.size(); i++) {
+  for (size_t i = best_index; i < 256; i++) {
     if (_color_distance(r, g, b, _256colors[i]) <
         _color_distance(r, g, b, _256colors[best_index]))
       best_index = i;
